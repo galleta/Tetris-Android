@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/categoria_sonidos"
+        android:key="categoriaSonidos">
+
+        <CheckBoxPreference
+            android:icon="@android:drawable/ic_lock_silent_mode_off"
+            android:key="musica"
+            android:title="@string/titulo_cb_musica"
+            android:summary="@string/descripcion_cb_musica"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:icon="@android:drawable/ic_lock_silent_mode_off"
+            android:key="efectos_sonoros"
+            android:title="@string/titulo_cb_efectos"
+            android:summary="@string/descripcion_cb_efectos"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/categoria_volumen"
+        android:key="categoriaVolumen">
+
+        <supertetris.supertetris.DialogPreferenceVolumenMusica
+            android:icon="@android:drawable/ic_popup_reminder"
+            android:key="volumen_musica"
+            android:dialogTitle="@string/titulo_volumen_musica"
+            android:title="@string/titulo_volumen_musica"
+            android:summary="@string/descripcion_volumen_musica" >
+        </supertetris.supertetris.DialogPreferenceVolumenMusica>
+
+        <supertetris.supertetris.DialogPreferenceVolumenEfectos
+            android:icon="@android:drawable/ic_popup_reminder"
+            android:key="volumen_efectos"
+            android:dialogTitle="@string/titulo_volumen_efectos"
+            android:title="@string/titulo_volumen_efectos"
+            android:summary="@string/descripcion_volumen_efectos" >
+        </supertetris.supertetris.DialogPreferenceVolumenEfectos>
+
+     </PreferenceCategory>
+
+</PreferenceScreen>
